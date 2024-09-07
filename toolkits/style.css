@@ -1,0 +1,157 @@
+/* Existing styles */
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: green;
+    color: white;
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+.fas fa-lightbulb{
+    color:yellow;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar ul li.active, 
+.sidebar ul li:hover {
+    background-color: #ff6600;
+    transform: scale(1.05);
+}
+
+.content {
+    flex-grow: 1;
+    padding: 40px;
+    background-color: #ffffff;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.activities {
+    list-style-type: none;
+    padding: 0;
+}
+
+.activities li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.activities {
+    flex: 1;
+}
+
+.media {
+    flex: 0 0 30%;
+    text-align: center;
+}
+
+.content-image {
+    max-width: 100%;
+    height: 300px;
+    margin-top: 4px;;
+}
+
+.video-container {
+    margin-top: 20px;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 315px;
+}
+
+/* Tab Content Styles */
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    opacity: 1;
+}
+
+/* Example for Font Awesome icons */
+h2 i.fas {
+    color: #ff6600; /* Default color */
+}
+
+/* For specific icon color */
+#ideation h2 i.fas {
+    color:yellow; /* Light blue for Ideation */
+}
+
+#validation h2 i.fas {
+    color: green; /* Orange for Validation */
+}
+
+#early-traction h2 i.fas {
+    color: blue; /* Green for Early Traction */
+}
+
+#scaling h2 i.fas {
+    color: violet; /* Red for Scaling */
+}
+
+/* Example for Material Icons */
+h2 i.material-icons {
+    color: #ff6600; /* Default color */
+}
+
+/* For specific icon color */
+#ideation h2 i.material-icons {
+    color: yellow; /* Light blue for Ideation */
+}
+
+#validation h2 i.material-icons {
+    color: #ff6600; /* Orange for Validation */
+}
+
+#early-traction h2 i.material-icons {
+    color: #28a745; /* Green for Early Traction */
+}
+
+#scaling h2 i.material-icons {
+    color: #dc3545; /* Red for Scaling */
+}
