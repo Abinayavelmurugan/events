@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackathon Event Page</title>
+  <link rel="stylesheet" href="styleh.css">
+</head>
+<body>
+
+  <!-- Header with Logo and Home Link -->
+  <div class="header">
+    <img src="Gov of IND.png" alt="Government Logo">
+    <a href="#">Back to Home</a>
+  </div>
+ <div class="hackathon-wrapper">
+  <h1 style="text-align: center;">Hackathon Event</h1>
+
+  <!-- Flexbox Container for Poster and Details -->
+  <div class="event-container">
+    <!-- Event Poster -->
+    <div class="event-poster">
+      <img src="hack poster.avif" alt="Event Poster">
+    </div>
+
+    <!-- Event Details -->
+    <div class="event-details">
+      <img style="width: 300px;" style="height:100px" src="Black and White Simple Monthly Schedule Flyer.png" alt="temp">
+    </div>
+  </div>
+  </div>
+  <div class="video">
+  <iframe  width="560" height="315" src="https://www.youtube.com/embed/21tL9ZCa-Qc?si=Fx-GyuAg8j1c_KtH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <!-- Short Description -->
+  <div class="event-description">
+    <p style="font-size: large;" >
+      The Ayush Hackathon, organized by the Ministry of AYUSH, is a unique platform that brings together innovators, developers, and entrepreneurs to address challenges in the traditional Indian health practices such as Ayurveda, Yoga, Unani, Siddha, and Homeopathy. The event aims to foster creativity and harness the power of technology to provide innovative solutions that can enhance the Ayush ecosystem.</p>
+
+<p style="font-size: large;" >Participants will have the opportunity to collaborate, create, and contribute to the future of holistic health and wellness. The hackathon focuses on finding scalable solutions to modernize and digitalize traditional medicine practices, improve public health through Ayush-based interventions, and integrate artificial intelligence and modern technologies into traditional healthcare systems.
+
+Join us to help build the future of Ayush, leveraging technology to create a healthier, more sustainable world.
+    </p>
+
+  <!-- Problem Statements with Individual Dropdown Menus -->
+  <div class="problem-statements">
+    <h2>Problem Statements</h2>
+  <p>1. Holistic Health Management Solutions:
+     Develop a comprehensive digital platform that integrates various Ayush practices, offering personalized health plans and monitoring tools for users to manage their overall well-being.</p>
+
+<p>2. AI-Driven Diagnosis Tools for Traditional Medicine: Create an AI-powered diagnostic tool that can analyze symptoms and suggest relevant Ayush treatments, enhancing the accuracy and accessibility of traditional healthcare.</p>
+
+<p>3. Telemedicine Platform for Ayush Consultations: Design a telemedicine platform specifically for Ayush practitioners, enabling remote consultations, patient monitoring, and the digital prescription of traditional medicines.</p>
+
+<p>4. Ayurveda-Based Wellness App: Build a mobile app that provides personalized Ayurveda lifestyle recommendations, including diet, exercise, and herbal remedies, based on individual body types (doshas).</p>
+
+<p>5. Digital Education Platform for Ayush: Develop an online platform that offers interactive courses, workshops, and certification programs in Ayurveda, Yoga, Unani, Siddha, and Homeopathy, aimed at both practitioners and the general public.</p>
+
+<p>6. Supply Chain Management for Ayush Medicines: Create a blockchain-based system to ensure the authenticity and traceability of Ayush medicines, from sourcing raw materials to the final product reaching consumers.</p>
+
+<p>7. Mental Health Solutions Through Yoga and Meditation: Design a digital tool that combines yoga, meditation, and mindfulness practices tailored to address various mental health challenges like stress, anxiety, and depression.</p>
+
+<p>8. Smart Herb Garden for Urban Dwellers: Develop a smart gardening solution that allows urban residents to grow Ayurvedic herbs at home, complete with automated care instructions and integration with Ayush-based health apps.</p>
+
+<p>9. Integrating Ayush in Primary Healthcare: Propose a model for integrating Ayush practices into the primary healthcare system, focusing on preventive care, chronic disease management, and reducing the burden on conventional medicine.</p>
+
+<p>10. Traditional Medicine Data Repository: Create a centralized digital repository that stores and curates research, case studies, and historical data related to traditional Indian medicine, making it easily accessible to researchers, practitioners, and students.</p>
+    
+    <!-- Guidelines -->
+    <div class="section">
+      <h2>Guidelines</h2>
+      <p>Ensure that your solutions are innovative, feasible, and scalable. Teams should consist of 3-5 members. All submissions must be made before the deadline. Any form of plagiarism will lead to disqualification.</p>
+    </div>
+  
+    <!-- Team Details -->
+    <div class="section">
+      <h2>Team Details</h2>
+      <p>Each team should consist of 3-5 members. Please ensure that your team has a diverse skill set, including developers, designers, and subject matter experts.</p>
+    </div>
+  
+    <!-- Event Details -->
+    <div class="section">
+      <h2>Event Details</h2>
+      <p><strong>Date:</strong> 25th November 2024</p>
+      <p><strong>Time:</strong> 9:00 AM - 5:00 PM</p>
+      <p><strong>Deadline for Submission:</strong> 24th November 2024, 11:59 PM</p>
+    </div>
+  
+    <!-- Contact Details -->
+    <div class="section">
+      <h2>Contact Details</h2>
+      <p>Email: hackathon@ayushstartup.com</p>
+      <p>Phone: +91-1234567890</p>
+    </div>
+
+  </div>
+
+  <!-- Register Button -->
+  <div class="register-button">
+    <button onclick="window.location.href='hack registration.html'">Register Now</button>
+  </div>
+
+  <!-- JavaScript for Dropdown Menus -->
+  <script>
+    function showDescription(id, value) {
+      const descriptions = {
+        "overview": "This is an overview of the problem statement.",
+        "solution": "These are some potential solutions for this problem statement."
+      };
+      
+      const descriptionDiv = document.getElementById(id);
+
+      if (value) {
+        descriptionDiv.innerHTML = descriptions[value];
+        descriptionDiv.style.display = "block";
+      } else {
+        descriptionDiv.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>

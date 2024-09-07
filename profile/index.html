@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ayush Startup Event Page</title>
+ <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  
+  
+  <!-- Add this inside your header div -->
+  <div class="search-bar">
+    <input type="text" placeholder="Search..." />
+    <button type="submit">Search</button>
+  </div>
+  
+  <h1>Ayush Startup Events</h1>
+  
+  <div class="hackathon-wrapper">
+    <div class="hackathon">
+      <!-- Existing Hackathon content -->
+      <div class="carousel-container">
+        <div class="carousel-images">
+          <img src="hack.avif" alt="Hackathon Poster 1" class="carousel-image">
+          <img src="win.avif" alt="Hackathon Poster 2" class="carousel-image">
+          <img src="team.avif" alt="Hackathon Poster 3" class="carousel-image">
+        </div>
+        <div class="carousel-nav">
+          <button class="nav-button active" onclick="moveSlide(0)"></button>
+          <button class="nav-button" onclick="moveSlide(1)"></button>
+          <button class="nav-button" onclick="moveSlide(2)"></button>
+        </div>
+      </div>
+      <div class="hackathon-content">
+        <div class="heading">
+          <h1>Hackathons</h1>
+        </div>
+        <div class="hackathon-text">
+          <p>Welcome to the startup challenge for the AYSUH sector. Join us for exciting hackathons that push the boundaries of innovation in healthcare.</p>
+        </div>
+        <a href="hackathon.html" class="know-more-button" target="_blank">Know More</a>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Upcoming Events Section -->
+ 
+  <h2>Upcoming Events</h2>
+  <div class="events-wrapper">
+  <div class="events-container">
+    <div class="event-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="logo5.jpg" alt="Ayush Health Camp">
+          <div class="event-details">
+            <h3>Ayush Health Camp</h3>
+            <p>Join us for the Ayush Health Camp, where holistic health meets expert care!</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <a href="health.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="logo4.jpg" alt="Ayurveda Wellness Workshop">
+          <div class="event-details">
+            <h3>Ayurveda Wellness Workshop</h3>
+            <p>Learn the secrets of Ayurveda and its benefits in this upcoming workshop.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <a href="well.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+    <div class="event-card">
+        <div class="card-inner">
+          <div class="card-front">
+            <img src="logo3.jpeg" alt="Ayurveda Wellness Workshop">
+            <div class="event-details">
+              <h3>Workshop</h3>
+              <p>Learn the secrets of Ayurveda and its benefits in this upcoming workshop.</p>
+            </div>
+          </div>
+          <div class="card-back">
+            <a href="work.html" class="know-more-button" target="_blank">Know More</a>
+          </div>
+        </div>
+      </div>
+      
+    <div class="event-card">
+      <div class="card-inner">
+        <div class="card-front">
+          <img src="logo1.jpg" alt="Ayush Yoga Retreat">
+          <div class="event-details">
+            <h3>Ayush Yoga Retreat</h3>
+            <p>Relax and rejuvenate at our Ayush Yoga Retreat.</p>
+          </div>
+        </div>
+        <div class="card-back">
+          <a href="yoga.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Webinars, Mentorships, Guides Section -->
+  
+  <h2>Others Events</h2>
+  <br>
+<div class="flipbox-container">
+  <!-- Webinars Flipbox -->
+  <div class="flipbox">
+    <div class="inner">
+      <div class="front">
+        <div class="front-content">
+          <img src="webinars.jpg" alt="web">
+          <h2>Webinars</h2>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content">
+          <p>Join our webinars and learn more about the latest trends in Ayush practices. Click to register!</p>
+          <a href="webinars.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Mentorships Flipbox -->
+  <div class="flipbox">
+    <div class="inner">
+      <div class="front">
+        <div class="front-content">
+          <img src="mentor.webp" alt="mentorship">
+          <h2>Mentorships</h2>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content">
+          <p>Get guidance from experts in the Ayush industry through our mentorship programs. Click here to sign up!</p>
+          <a href="mentor.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Guides Flipbox -->
+  <div class="flipbox">
+    <div class="inner">
+      <div class="front">
+        <div class="front-content">
+          <img src="guide.jpg" alt="guides">
+          <h2>Guides</h2>
+        </div>
+      </div>
+      <div class="back">
+        <div class="back-content">
+          <p>Access valuable resources and guides to enhance your knowledge in Ayush. Click to explore!</p>
+          <a href="guide.html" class="know-more-button" target="_blank">Know More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.carousel-image');
+    const buttons = document.querySelectorAll('.carousel-nav .nav-button');
+
+    function moveSlide(slideIndex) {
+      if (slideIndex < 0 || slideIndex >= slides.length) return;
+      document.querySelector('.carousel-images').style.transform = `translateX(-${slideIndex * 100}%)`;
+      buttons[currentSlide].classList.remove('active');
+      buttons[slideIndex].classList.add('active');
+      currentSlide = slideIndex;
+    }
+  </script>
+
+</body>
+</html>
+
