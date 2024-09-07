@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+}
+
+.benefits-section {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.benefits-section h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #333;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeInSlideDown 1s forwards 0.5s;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color:wheat;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 300px;
+    overflow: hidden;
+    cursor: pointer;
+    perspective: 1000px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInSlideUp 1s forwards;
+}
+
+.card:hover {
+    transform: translateY(-10px) rotateX(5deg);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+
+.card-content img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.card:hover .card-content img {
+    transform: scale(1.2);
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #007b5e;
+}
+
+.card-content p {
+    font-size: 1em;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Animation for Fade In and Slide Up */
+@keyframes fadeInSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animation for Fade In and Slide Down */
+@keyframes fadeInSlideDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-image {
+    position: fixed;
+    bottom: 0;
+    width: 300px;
+    animation: float 3s ease-in-out infinite;
+}
+
+.left {
+    left: 0;
+}
+
+.right {
+    right: 0;
+}
+
+/* Float animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .animated-image {
+        width: 100px;
+    }
+}
